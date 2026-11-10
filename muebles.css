@@ -1,0 +1,31 @@
+/*
+    MUEBLES CSS
+    Moisés Fernández Nov 2026
+*/
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10 píxeles */
+}
+body{ 
+  font-size: 1.6rem;/*Para que todo el texto tenga 16 píxeles */
+}
+h1{ font-size: 4rem; /* 4rem = 40 píxeles */}
+
+.sobre-nosotros{
+   border: 3px solid black;   
+   background-image: linear-gradient(to right, transparent 50%,#037bc0 50%, #037bc0 100%), url(./estudiar.jpg);
+   background-size: 100%, 120rem; /* el primer tamaño es para el gradiente y el 2º es para la imagen */
+   padding: 8rem 0;
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}
+
+.sobre-nosotros h2{
+   grid-column: 3/5;
+   text-align: center;
+   color: white;
+}
